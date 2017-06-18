@@ -15,7 +15,7 @@ class Movie {
     var imageUrl: String = ""
     var plot: String = ""
     
-    init(id: String, title: String,year: String, imageUrl: String, plot: Strint = ""){
+    init(id: String, title: String,year: String, imageUrl: String, plot: String = ""){
         self.id = id
         self.title = title
         self.year = year
@@ -23,4 +23,4 @@ class Movie {
         self.plot = plot
     }
     
-}
+} 

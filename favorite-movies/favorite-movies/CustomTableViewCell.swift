@@ -17,7 +17,7 @@ class CustomTableViewCell: UITableViewCell {
     var x: String?
 
     override func awakeFromNib() {
-        super.awakeFromNib()
+        super.awakeFromNib() 
         // Initialization code
     }
 
