@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720F04DA1EF7E1DF00A14CFA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F04D91EF7E1DF00A14CFA /* SearchViewController.swift */; };
 		72ACD09C1EF6E6AE003E2409 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACD09B1EF6E6AE003E2409 /* Movie.swift */; };
 		72C2C3641EF6D8D9001E695B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2C3631EF6D8D9001E695B /* AppDelegate.swift */; };
 		72C2C3661EF6D8D9001E695B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2C3651EF6D8D9001E695B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720F04D91EF7E1DF00A14CFA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		72ACD09B1EF6E6AE003E2409 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		72C2C3601EF6D8D9001E695B /* favorite-movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favorite-movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C2C3631EF6D8D9001E695B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				72C2C36F1EF6D8D9001E695B /* Info.plist */,
 				72C2C3751EF6DD90001E695B /* CustomTableViewCell.swift */,
 				72ACD09B1EF6E6AE003E2409 /* Movie.swift */,
+				720F04D91EF7E1DF00A14CFA /* SearchViewController.swift */,
 			);
 			path = "favorite-movies";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720F04DA1EF7E1DF00A14CFA /* SearchViewController.swift in Sources */,
 				72C2C3761EF6DD90001E695B /* CustomTableViewCell.swift in Sources */,
 				72C2C3661EF6D8D9001E695B /* ViewController.swift in Sources */,
 				72ACD09C1EF6E6AE003E2409 /* Movie.swift in Sources */,
