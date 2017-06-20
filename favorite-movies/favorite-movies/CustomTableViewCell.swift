@@ -14,6 +14,8 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet var movieTitle: UILabel!
     @IBOutlet var movieYear: UILabel!
     
+    @IBOutlet var favButton: UIButton!
+    
     var x: String?
 
     override func awakeFromNib() {
