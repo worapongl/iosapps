@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VGO-4X-IzR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SHIVTracking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProductViewController" customModule="SHIVTracking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dimension-data-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gae-01-QqH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gae-01-QqH">
                                 <rect key="frame" x="16" y="76" width="343" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHIV Tracking System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaw-jP-Gmg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="System Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaw-jP-Gmg">
                                 <rect key="frame" x="16" y="196" width="343" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
@@ -36,17 +36,125 @@
                                 <rect key="frame" x="153" y="257" width="68" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="phone-icon-2"/>
+                                <connections>
+                                    <action selector="phoneCallPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsT-VC-Af0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="productImageView" destination="Gae-01-QqH" id="aIM-Ff-NWM"/>
+                        <outlet property="productNameLabel" destination="uaw-jP-Gmg" id="GPn-q0-P3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="3640.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="v7R-aA-Gwi">
+            <objects>
+                <viewController id="ar3-XW-o83" customClass="ContactViewController" customModule="SHIVTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="31w-wM-Fpc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bbm-Oc-4fh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amY-dT-DX4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="8aC-RJ-zXH" id="0tJ-vs-PRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUK-04-Tws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="8aC-RJ-zXH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LINE_logo" translatesAutoresizingMaskIntoConstraints="NO" id="DA0-UR-VST">
+                            <rect key="frame" x="140" y="42" width="94" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUT US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz0-1j-g8Q">
+                            <rect key="frame" x="8" y="141" width="359" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dimension-data-logo" translatesAutoresizingMaskIntoConstraints="NO" id="1tU-fh-4kE">
+                            <rect key="frame" x="27" y="649" width="321" height="73"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lw-AN-xKx">
+                            <rect key="frame" x="8" y="154" width="359" height="429"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mutableString key="text">The uprising in eastern Herzegovina on 23 June 1941 was a Serb rebellion against the authorities of the Independent State of Croatia (NDH), an Axis puppet state established during World War II on the territory of the defeated Kingdom of Yugoslavia. As the NDH imposed its authority, members of the fascist Ustaše ruling party had begun a campaign of persecution against Serbs throughout the country. In eastern Herzegovina, the Ustaše perpetrated a series of massacres and attacks against the majority Serb population commencing in the first week of June, igniting a series of spontaneous clashes between the NDH authorities and groups of Serbs. On 23 June, the day after the start of the German invasion of the Soviet Union, sporadic revolts erupted into mass rebellion, triggered by Ustaše persecution, </mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </scrollView>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Task Table View Controller-->
+        <scene sceneID="wsg-CP-weJ">
+            <objects>
+                <tableViewController id="tC2-NA-P2q" customClass="TaskTableViewController" customModule="SHIVTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="84" sectionHeaderHeight="18" sectionFooterHeight="18" id="rWO-B4-69h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="84" id="KZA-Hh-blN">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KZA-Hh-blN" id="WHj-Yr-Aic">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowTaskDetail" id="KP5-zH-lkU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tC2-NA-P2q" id="cxn-cS-vum"/>
+                            <outlet property="delegate" destination="tC2-NA-P2q" id="AdX-wy-ucy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Dsz-c8-jDa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIw-bs-YuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4rT-B1-6sK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VGO-4X-IzR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4e3-xE-gjO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tC2-NA-P2q" kind="relationship" relationship="rootViewController" id="wv8-Lx-Vqd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVM-Sb-XDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LINE_logo" width="1240" height="1240"/>
         <image name="dimension-data-logo" width="800" height="185"/>
         <image name="phone-icon-2" width="482" height="485"/>
     </resources>

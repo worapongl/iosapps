@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72421F371EFD29710010F263 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72421F361EFD29710010F263 /* ProductViewController.swift */; };
+		72421F391EFD2DF40010F263 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72421F381EFD2DF40010F263 /* ContactViewController.swift */; };
+		72421F3B1EFD36750010F263 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72421F3A1EFD36750010F263 /* TaskTableViewController.swift */; };
 		72E8FAF01EFCF5470076214C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8FAEF1EFCF5470076214C /* AppDelegate.swift */; };
 		72E8FAF21EFCF5470076214C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8FAF11EFCF5470076214C /* ViewController.swift */; };
 		72E8FAF51EFCF5470076214C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E8FAF31EFCF5470076214C /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72421F361EFD29710010F263 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		72421F381EFD2DF40010F263 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		72421F3A1EFD36750010F263 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		72E8FAEC1EFCF5470076214C /* SHIVTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHIVTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E8FAEF1EFCF5470076214C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E8FAF11EFCF5470076214C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				72E8FAF61EFCF5470076214C /* Assets.xcassets */,
 				72E8FAF81EFCF5470076214C /* LaunchScreen.storyboard */,
 				72E8FAFB1EFCF5470076214C /* Info.plist */,
+				72421F361EFD29710010F263 /* ProductViewController.swift */,
+				72421F381EFD2DF40010F263 /* ContactViewController.swift */,
+				72421F3A1EFD36750010F263 /* TaskTableViewController.swift */,
 			);
 			path = SHIVTracking;
 			sourceTree = "<group>";
@@ -136,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72421F3B1EFD36750010F263 /* TaskTableViewController.swift in Sources */,
+				72421F371EFD29710010F263 /* ProductViewController.swift in Sources */,
+				72421F391EFD2DF40010F263 /* ContactViewController.swift in Sources */,
 				72E8FAF21EFCF5470076214C /* ViewController.swift in Sources */,
 				72E8FAF01EFCF5470076214C /* AppDelegate.swift in Sources */,
 			);
