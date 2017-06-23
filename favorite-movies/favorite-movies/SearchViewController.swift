@@ -26,7 +26,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func retrieveMoviesByTerm(searchTerm: String){
-        let url = "https://www.omdbapi.com/?s=\(searchTerm)&type=movie&=r=json"
+        let url = "https://www.omdbapi.com/?apikey=cada3d0d&s=\(searchTerm)&type=movie&=r=json"
         
         HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
     }
